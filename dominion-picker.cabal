@@ -27,10 +27,18 @@ executable dominion-picker
     -- Modules included in this executable, other than Main.
     other-modules:
         Cards,
-        Board
+        Board,
+        Player,
+        PlayerActions,
+        Utils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.14.1.0
+    build-depends:    
+        base ^>=4.14.1.0,
+        random,
+        time,
+        lens
+    
     hs-source-dirs:   app
     default-language: Haskell2010

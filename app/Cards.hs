@@ -10,14 +10,14 @@ data CardType =
     Curse    | 
     Action   | 
     Reaction | 
-    Attack   deriving (Show)
+    Attack   deriving (Read, Show)
 
 data Card = Card { 
-    name :: CardName, 
-    worth :: CardWorth, 
-    cardType :: [CardType],
+    name          :: CardName, 
+    worth         :: CardWorth, 
+    cardType      :: [CardType],
     victoryPoints :: VictoryPoints
-} deriving (Show)
+} deriving (Read, Show)
 
 --              Name       Value    Type               Victory Points
 copper   = Card "Copper"   0        [Treasure]         0
