@@ -17,7 +17,6 @@ data Card = Card {
     worth :: CardWorth, 
     cardType :: [CardType],
     victoryPoints :: VictoryPoints
-    
 } deriving (Show)
 
 --              Name       Value    Type               Victory Points
